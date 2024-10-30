@@ -1,5 +1,23 @@
+:root {
+    --dark-gray: hsl(0, 0%, 8%);
+    --mid-gray: hsl(0, 0%, 12%);
+    --light-gray: hsl(0, 0%, 20%);
+    --white: hsl(0, 0%, 100%);
+    --radioactive-green: hsl(75, 94, 54);
+    --default-letter-spacing: 0;
+    --default-line-height: 1.5rem;
+    --fs-big: 1.5rem;
+    --fs-regular: 0.875rem;
+    --spacing-500: 2.5rem;
+    --spacing-300: 1.5rem;
+    --spacing-200: 1rem;
+    --spacing-150: 0,75rem;
+    --spacing-100: 0.5rem;
+}
+
 *, *::before, *::after {
   box-sizing: border-box;
   margin: 0;
   padding: 0;
 }
+
