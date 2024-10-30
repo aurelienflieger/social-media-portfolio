@@ -39,6 +39,9 @@
   justify-content: center;
   align-items: center;
   background-color: var(--mid-gray);
+  max-width: 500px;
+  min-width: 400px;
+  width: 50%;
 }
 
 .portfolio__header {
