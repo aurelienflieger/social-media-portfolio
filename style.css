@@ -3,7 +3,7 @@
   --mid-gray: hsl(0, 0%, 12%);
   --light-gray: hsl(0, 0%, 20%);
   --white: hsl(0, 0%, 100%);
-  --radioactive-green: hsl(75, 94, 54);
+  --radioactive-green: hsl(75, 77%, 58%);
   --default-letter-spacing: 0;
   --default-line-height: 1.5rem;
   --fs-big: 1.5rem;
@@ -11,8 +11,37 @@
   --spacing-500: 2.5rem;
   --spacing-300: 1.5rem;
   --spacing-200: 1rem;
-  --spacing-150: 0, 75rem;
+  --spacing-150: 0.75rem;
   --spacing-100: 0.5rem;
+  --border-radius: 0.25rem;
+}
+
+@font-face {
+  font-family: "Inter";
+  src: url("./assets/fonts/Inter-VariableFont_slnt\,wght.ttf");
+  font-weight: 100 900;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Inter";
+  src: url("./assets/fonts/static/Inter-Regular.ttf");
+  font-weight: 400;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Inter";
+  src: url("./assets/fonts/static/Inter-SemiBold.ttf");
+  font-weight: 600;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Inter";
+  src: url("./assets/fonts/static/Inter-Bold.ttf");
+  font-weight: 800;
+  font-style: normal;
 }
 
 *,
@@ -30,6 +59,8 @@
   height: 100vh;
   width: 100vw;
   background-color: var(--dark-gray);
+  font-family: "Inter", sans-serif;
+  font-weight: 600;
 }
 
 .portfolio {
@@ -39,9 +70,12 @@
   justify-content: center;
   align-items: center;
   background-color: var(--mid-gray);
-  max-width: 500px;
-  min-width: 400px;
+  max-width: 400px;
+  min-width: 300px;
   width: 50%;
+  overflow: scroll;
+  height: 100%;
+  max-height: 600px;
 }
 
 .portfolio__header {
@@ -67,6 +101,7 @@
 .portfolio__address {
   font-size: var(--fs-regular);
   color: var(--radioactive-green);
+  font-style: normal;
 }
 
 .portfolio__description {
@@ -74,18 +109,27 @@
   color: var(--white);
   text-align: center;
   margin-bottom: var(--spacing-300);
+  font-weight: 400;
 }
 
 .portfolio___list {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  gap: var(--spacing-100);
+  gap: var(--spacing-200);
+  list-style-type: none;
+  width: 100%;
 }
 
 .portfolio__list-item {
   text-align: center;
   padding: var(--spacing-150);
+  color: var(--white);
+  background-color: var(--light-gray);
+  border-radius: var(--border-radius);
+  transition: background-color 0.5s ease-in;
+  font-weight: 800;
+  font-size: var(--fs-regular);
 }
 
 .portfolio__list-item:hover {
